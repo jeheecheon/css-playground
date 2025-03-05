@@ -2559,6 +2559,7 @@ __metadata:
     prettier-plugin-tailwindcss: "npm:^0.6.11"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
+    react-flip-toolkit: "npm:^7.2.4"
     storybook: "npm:^8.6.3"
     tailwindcss: "npm:^4.0.9"
     typescript: "npm:~5.7.2"
@@ -3199,6 +3200,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flip-toolkit@npm:7.2.4":
+  version: 7.2.4
+  resolution: "flip-toolkit@npm:7.2.4"
+  dependencies:
+    rematrix: "npm:0.2.2"
+  checksum: 10c0/9ebb9a9a13bcd55f06beadbf62066178d89a73e48bbb14a8b704d27fc275abf0a979f9c7e5de9383067f8814d626f7a2d14d82f1d193872bd0823ab657ce559b
+  languageName: node
+  linkType: hard
+
 "for-each@npm:^0.3.3":
   version: 0.3.5
   resolution: "for-each@npm:0.3.5"
@@ -3725,7 +3735,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-tokens@npm:^4.0.0":
+"js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
   checksum: 10c0/e248708d377aa058eacf2037b07ded847790e6de892bbad3dac0abba2e759cb9f121b00099a65195616badcb6eca8d14d975cb3e89eb1cfda644756402c8aeed
@@ -3972,6 +3982,17 @@ __metadata:
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
+  languageName: node
+  linkType: hard
+
+"loose-envify@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "loose-envify@npm:1.4.0"
+  dependencies:
+    js-tokens: "npm:^3.0.0 || ^4.0.0"
+  bin:
+    loose-envify: cli.js
+  checksum: 10c0/655d110220983c1a4b9c0c679a2e8016d4b67f6e9c7b5435ff5979ecdb20d0813f4dec0a08674fcbdd4846a3f07edbb50a36811fd37930b94aaa0d9daceb017e
   languageName: node
   linkType: hard
 
@@ -4337,6 +4358,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"object-assign@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "object-assign@npm:4.1.1"
+  checksum: 10c0/1f4df9945120325d041ccf7b86f31e8bcc14e73d29171e37a7903050e96b81323784ec59f93f102ec635bcf6fa8034ba3ea0a8c7e69fa202b87ae3b6cec5a414
+  languageName: node
+  linkType: hard
+
 "open@npm:^8.0.4":
   version: 8.4.2
   resolution: "open@npm:8.4.2"
@@ -4676,6 +4704,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prop-types@npm:^15.8.1":
+  version: 15.8.1
+  resolution: "prop-types@npm:15.8.1"
+  dependencies:
+    loose-envify: "npm:^1.4.0"
+    object-assign: "npm:^4.1.1"
+    react-is: "npm:^16.13.1"
+  checksum: 10c0/59ece7ca2fb9838031d73a48d4becb9a7cc1ed10e610517c7d8f19a1e02fa47f7c27d557d8a5702bec3cfeccddc853579832b43f449e54635803f277b1c78077
+  languageName: node
+  linkType: hard
+
 "psl@npm:^1.1.33":
   version: 1.15.0
   resolution: "psl@npm:1.15.0"
@@ -4755,6 +4794,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-flip-toolkit@npm:^7.2.4":
+  version: 7.2.4
+  resolution: "react-flip-toolkit@npm:7.2.4"
+  dependencies:
+    flip-toolkit: "npm:7.2.4"
+    prop-types: "npm:^15.8.1"
+  peerDependencies:
+    react: ">= 16.x"
+    react-dom: ">= 16.x"
+  checksum: 10c0/096943a911340525f16c4441af82cbaeb38ba6ad9ea42c01c3c56230c939792e555f12e2f318ff4b03d253e23034d335fb2d797eb25f80ef2eec3ff7a85aba4d
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^16.13.1":
+  version: 16.13.1
+  resolution: "react-is@npm:16.13.1"
+  checksum: 10c0/33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^17.0.1":
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
@@ -4796,6 +4855,13 @@ __metadata:
   version: 0.14.1
   resolution: "regenerator-runtime@npm:0.14.1"
   checksum: 10c0/1b16eb2c4bceb1665c89de70dcb64126a22bc8eb958feef3cd68fe11ac6d2a4899b5cd1b80b0774c7c03591dc57d16631a7f69d2daa2ec98100e2f29f7ec4cc4
+  languageName: node
+  linkType: hard
+
+"rematrix@npm:0.2.2":
+  version: 0.2.2
+  resolution: "rematrix@npm:0.2.2"
+  checksum: 10c0/b9b5a9ceee2fc684ae43c41f4e805109c4734c61859eea6dac6021ce980e7f3c4e914fe5e3561fe078f4134db59c190c7d42b89bea4c0fae95bbbae4792cbcb8
   languageName: node
   linkType: hard
 
